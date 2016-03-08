@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Learning Javascript </title>
+  </head>
+  <body>
+    <h3> Adivinha qual é o número?</h3>
+    <input id="dedo"/>
+    <button id="botao">Confirmar</button>
+
+    <script type="text/javascript">
+            document.getElementById("botao").onclick=function() {
+              var x=Math.random();
+              x=6*x;
+              x=Math.floor(x);
+
+              if (x==document.getElementById("dedo").value) {
+                alert("Está correto");
+              } else {
+                alert ("Voce errou, o numero correto era "+ x);
+              }
+            }
+    </script>
+
+  </body>
+</html>

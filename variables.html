@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Learning Javascript </title>
+  </head>
+  <body>
+
+      <!-- trocar texto -->
+
+      <input id="myInput" type="text" value="Test"/>
+
+      <button id="changeTxt"> Trocar o texto </button>
+
+      <div id="initTxt">Esse é o primeiro texto</div>
+
+
+    <script type="text/javascript">
+
+          var newTxt=document.getElementById("myInput").value;
+
+          document.getElementById("changeTxt").onclick=function(){
+                newTxt=document.getElementById("myInput").value;
+                document.getElementById("initTxt").innerHTML=newTxt;
+
+            }
+    </script>
+
+  </body>
+</html>
