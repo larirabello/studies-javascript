@@ -7,16 +7,16 @@
     <title> Learning Javascript </title>
   </head>
   <body>
-    <button id="textChanger">Change the text!</button>
-    <div id="firstDiv">This is some text</div>
+    <<p id="arrayString"></p>
 
     <script type="text/javascript">
-      var myArray=new Array(2);
+      var arrayString="";
 
-      myArray[0]="pizza";
-      myArray[1]="chocolate";
-
-      myOtherArray=["rain","sunshine"];
+      var myArray=["pizza", "chocolate", "crisps"];
+      var i=0;
+        while (i<myArray.length) {
+          arrayString=arrayString+myArray[i]+" ";
+        }
 
       myOtherArray.push("snow"); /*coloca o snow no final da lista de arrays*/
 
