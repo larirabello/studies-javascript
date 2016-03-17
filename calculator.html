@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora</title>
+</head>
+<body>
+  <label>Valor 1:</label>
+  <input id="v1" type="number"></input>
+  <label>Valor 2:</label>
+  <input id="v2" type="number"></input>
+  <div id="resultado"></div>
+  <button onclick="soma()">+</button>
+  <button onclick="subt()">-</button>
+  <button onclick="mult()">*</button>
+  <button onclick="divi()">/</button>
+</body>
+<script type="text/javascript">
+  var val1, val2, result=0;
+
+  function ler() {
+    val1 = parseInt(document.getElementById("v1").value);
+    val2 = parseInt(document.getElementById("v2").value);
+  }
+
+  function soma() {
+    ler();
+    result = val1+val2;
+    document.getElementById("resultado").innerHTML = result;
+  }
+
+  function subt() {
+    ler();
+    result = val1-val2;
+    document.getElementById("resultado").innerHTML = result;
+  }
+
+  function mult() {
+    ler();
+    result = val1*val2;
+    document.getElementById("resultado").innerHTML = result;
+  }
+
+  function divi() {
+    ler();
+    result = val1/val2;
+    document.getElementById("resultado").innerHTML = result;
+  }
+
+</script>
+</html>
