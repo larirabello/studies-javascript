@@ -17,7 +17,6 @@
 
     <script type="text/javascript">
 
-//NOT WORKING
 
       document.getElementById("guess").onclick=function() {
 
@@ -31,24 +30,21 @@
 
         x=Math.floor(x);
 
-
-
         if (document.getElementById("myNumber").value==x) {
 
           gotit=true;
 
         }  else {
 
-              guesses++;
+            guesses++;
+
         }
-
-      }
-
-    alert("Got it! It was a "+x+". It only took me "+guesses+" guesses!");
 
    }
 
+   alert("Got it! It was a "+x+". It only took me "+guesses+" guesses!")
 
+}
     </script>
 
   </body>
