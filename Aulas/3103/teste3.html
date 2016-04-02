@@ -13,32 +13,75 @@
 
 
     <script type="text/javascript">
-        
-        
-     /*
-    var idade = prompt('Digite a idade: ');
 
-    var ano = 2016 - 1980;
 
-    if (idade>=ano) {
-      alert ("Nasceu em 1980 ou antes"); 
-    } else {
-      alert ("Nasceu antes de 1980");
-    }
+  // TERNÁRIO
+
+  var idade = prompt('Digite a idade: ');
+
+  var ano = 2016 - idade;
+
+  var young = false;
+
+  ano <= 1980 ? (
+    alert ("Nasceu antes de 1980")
+  ) : (
+    young=true,
+    alert("Nasceu após 1980")
+ );
+
+
+
+
+
+
+
+ /*
+
+ //USANDO IF
+
+var idade = prompt('Digite a idade: ');
+
+var ano = 2016 - 1980;
+
+if (idade>=ano) {
+  alert ("Nasceu em 1980 ou antes");
+} else {
+  alert ("Nasceu antes de 1980");
+}
+
+*/
+
+
+//ATRIBUIÇÃO CONDICIONAL
+
+/*  var idade = prompt('Digite a idade: ');
+
+var ano = 2016 - idade;
+
+idade = (idade>ano) ? alert("Nasceu antes de 1980") : "Nasceu após 1980";
 
 */
 
 
 
-    var idade = prompt('Digite a idade: ');
 
-    var ano = 2016 - idade;
 
-    var result = (ano == 1980);
 
-    alert(result);
-        
-        
+
+    //var result = (ano > 1980);
+
+    //var result2 = (ano <= 1980);
+
+
+
+    //var x = (ano>1980) || (ano<=1980);
+
+    //alert(x);
+
+
+
+
     </script>
 
   </body>
