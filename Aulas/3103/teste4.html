@@ -15,23 +15,24 @@
 
     var nome = prompt('Digite o nome: ');
     var ano = prompt('Digite o ano de nascimento: ');
-
-
-
     var idade = 2016-ano;
     var y;
 
 
     var x = (idade >= 18 && idade <= 60) ? "Usuário tem entre 18 e 60 anos" : "Usuário está fora da faixa etária 18-60 anos";
 
-    var a = alert(x+y);
+    y= (nome == "Maria") ? " e seu nome é Maria." : " e seu nome não é João nem Maria.";
+
+    var z = (nome == 'João') ? (" e seu nome é João.") : y;
+
+    var a = x+z;
+
+    alert(a);
+
+
     //var y = (nome == 'João'|| nome == 'Maria') ? alert(y) : alert("Usuário não se chama João nem Maria.");
 
     //var z = (nome == 'João') ? "João" : "Maria";
-
-    var z = (nome == 'João') ? alert(x+" e seu nome é João.") : a;
-
-     y= (nome == "Maria") ? " e seu nome é Maria." : " e seu nome não é João nem Maria.";
 
 
     //var x = idade >= 18 && idade <= 60;
