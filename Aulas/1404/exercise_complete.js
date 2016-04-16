@@ -16,4 +16,3 @@ if (valor1 > valor2) {
 }
 
 alert ("O triplo do maior valor é  "+3*maior);
-/*
