@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title>Bloqueia Botão Control C e Control V</title>
+
+<script language="javascript">
+
+function BloqueiaComando(event) {
+  var tecla = String.fromCharCode(event.keyCode).toLowerCase();
+
+  if (event.ctrlKey && (tecla == "c" || tecla == "v")) {
+  window.event ? event.returnValue = false : event.preventDefault();
+ return false
+  }
+}
+</script>
+	
+</head>
+
+<body>
+<input type="text" name="campo" onkeydown = "BloqueiaComando(event)">
+</body>
+
+</html>

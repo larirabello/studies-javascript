@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    
+<style>
+    
+    h1, h2 {
+        font-family: 'Open Sans Condensed', sans-serif;
+    }
+    
+    button {
+        
+        background-color: #fff;
+        width: 70px;
+        height: 20px;
+        border: 1px solid grey;
+        font-family: 'Open Sans Condensed', sans-serif;
+        
+    }
+    
+    button:hover {
+        
+        background-color: aliceblue;
+        
+    }
+    
+    
+</style>
+
+<h1>Atrelar um evento com Javascript</h1>   
+<h2>Evento onclick - Click nos botões abaixo</h2>   
+<button id="alerting">Alert</button>
+<button id="confirming">Confirm</button>
+<button id="lastOne">Prompt</button>
+
+
+<script>
+
+    document.getElementById("alerting").onclick=function () {
+        alert("It's Working!");
+    }
+    
+    document.getElementById("confirming").onclick=function () {
+        confirm("It's also Working!");
+    }
+    
+     document.getElementById("lastOne").onclick=function () {
+        prompt("It's done! Insert something below: ");
+    }
+    
+</script>
+
+</body>
+</html>
+
+
